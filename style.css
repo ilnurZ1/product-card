@@ -1,9 +1,23 @@
+div {
+  background: #000000 url("bkg.png") no-repeat center / cover;
+}
+
 body{
-    color: rgb(51, 8, 8);
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-span{
+    color: rgb(107, 16, 16);
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 70px;
+    margin:  0;
+    
+}
+.product-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
