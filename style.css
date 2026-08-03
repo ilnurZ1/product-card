@@ -1,5 +1,6 @@
-div {
-  background: #000000 url("bkg.png") no-repeat center / cover;
+span{
+line-height: 3;
+font-weight: bold;
 }
 
 body{
@@ -20,4 +21,8 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+b{
+    line-height: 3;
 }
