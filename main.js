@@ -47,3 +47,11 @@ outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №6'))
   }
 
 
+  // Выбери свой продукт
+
+  const title = document.querySelector('h1')
+
+title.addEventListener('mouseover', function () {
+  console.log(title.textContent)
+})
+
