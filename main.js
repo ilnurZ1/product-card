@@ -1,57 +1,54 @@
 // Покраска всех карточек
 
-const productCards = document.querySelectorAll('.products__item');
-const changecolorAllcardButton = document.querySelector('#change-color-all');
+const productCards = document.querySelectorAll(".products__item");
+  const changecolorAllcardButton = document.querySelector("#change-color-all");
+    const colorHash = "#D5D5D5";
 
-    const colorHash = '#D5D5D5';
-
-changecolorAllcardButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = colorHash)
-})
+changecolorAllcardButton.addEventListener("click", () => {
+  productCards.forEach((card) => (card.style.backgroundColor = colorHash));
+});
 
 // Покраска одной карточки
 
-const productCard = document.querySelector('.products__item');
-const changecolorcardButton = document.querySelector('#change-color');
+const productCard = document.querySelector(".products__item");
+const changecolorcardButton = document.querySelector("#change-color");
 
-    const platincolorHash = '#faebcd'
+const platincolorHash = "#faebcd";
 
-changecolorcardButton.addEventListener('click', () => {
+changecolorcardButton.addEventListener("click", () => {
   productCard.style.backgroundColor = platincolorHash;
-})
+});
 
-// Открыть Гугл
+// Открыть ГуглSS
 
-const openGoogleButton = document.querySelector('#open-google')
-openGoogleButton.addEventListener('click', openGoogle)
+const openGoogleButton = document.querySelector("#open-google");
+openGoogleButton.addEventListener("click", openGoogle);
 
 function openGoogle() {
-  const answer   = confirm('Вы действительно хотите открыть');
+  const answer = confirm("Вы действительно хотите открыть");
 
   if (answer === true) {
-  window.open('https://google.com')
-} else {
-  return;
+    window.open("https://google.com");
+  } else {
+    return;
   }
 }
 
 // вывод консоль лог
 
-  const outputLogButton = document.querySelector('#message-consoleLog');
+const outputLogButton = document.querySelector("#message-consoleLog");
 
-outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №6'))
+outputLogButton.addEventListener("click", () => outputConsoleLog("ДЗ №6"));
 
-  function outputConsoleLog(message) {
-  alert(message)
-  console.log(message)
-  }
+function outputConsoleLog(message) {
+  alert(message);
+  console.log(message);
+}
 
+// Выбери свой продукт
 
-  // Выбери свой продукт
+const title = document.querySelector("h1");
 
-  const title = document.querySelector('h1')
-
-title.addEventListener('mouseover', function () {
-  console.log(title.textContent)
-})
-
+title.addEventListener("mouseover", function () {
+  console.log(title.textContent);
+});
